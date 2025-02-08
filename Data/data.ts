@@ -25,7 +25,7 @@ export const servicesData = [
   },
   {
     id: 2,
-    title: "E-commerce Websites",
+    title: "E-commerce Web",
     description:
       "Secure online stores with user-friendly shopping and payments.",
     icon: "/images/s2.png",
@@ -65,7 +65,7 @@ export const servicesData = [
   },
   {
     id: 8,
-    title: "Website Management",
+    title: "Web Management",
     description: "Easy content management systems with flexible controls.",
     icon: "/images/s8.png",
   },

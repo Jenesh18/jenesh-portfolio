@@ -27,12 +27,12 @@ const Hero = () => {
 
                         {/* Button */}
                         <button className='md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-blue-900 flex items-center space-x-2'>
-                          <span>Download CV</span>
-                          <FaDownload />
+                            <span>Download CV</span>
+                            <FaDownload />
                         </button>
                     </div>
                     <div className='mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden'>
-                      <Image src={BaseInfo.profilePic} alt={BaseInfo.name} width={500} height={500} />
+                        <Image src={BaseInfo.profilePic} alt={BaseInfo.name} width={500} height={500} />
                     </div>
                 </div>
             </div>
