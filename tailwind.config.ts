@@ -7,6 +7,9 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      scrollBehavior: ['smooth'],
+    },
   },
   plugins: [],
 } satisfies Config;

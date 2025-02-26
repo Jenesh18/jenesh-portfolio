@@ -2,93 +2,55 @@ import SectionHeading from '@/components/Helper/SectionHeading'
 import { aboutInfo } from '@/Data/data'
 import Image from 'next/image'
 import React from 'react'
-import { FaCheck } from 'react-icons/fa'
 
 const About = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#050709]">
-      {/*Section Heading*/}
+    <div className="py-20 bg-[#050709]" id='about'>
       <SectionHeading>About Me</SectionHeading>
-      <div className='w-[80%] mx-auto grid grid-cols-1 gap-8 items-center mt-20'>
-        {/* Text content */}
-        <div data-aos="fade-left" data-aos-anchor-placement="top-center" >
-          <h1 className='text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200'>
-            {aboutInfo.title}
-          </h1>
-          <p className='mt-6 text-base text-gray-500'>
-            {aboutInfo.description}
-          </p>
-          <div className='mt-8'>
-            <div className='flex items-center space-x-2 mb-6'>
-              <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>
-                <FaCheck className='text-white' />
+      
+      <div className='container mx-auto px-4 max-w-7xl'>
+        {/* Main Content */}
+        <div className='mt-16 grid lg:grid-cols-2 gap-16'>
+          {/* Left Column - Text & Skills */}
+          <div data-aos="fade-right" className='space-y-12'>
+            <div className='space-y-6'>
+              <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent leading-tight'>
+                {aboutInfo.title}
+              </h1>
+              
+              <div className='text-gray-400 space-y-4'>
+                {aboutInfo.description.split('\n\n').map((paragraph, idx) => (
+                  <p key={idx} className='text-lg leading-relaxed'>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
-              <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'> Backend Development</p>
-            </div>
-            <div className='flex items-center space-x-2 mb-6'>
-              <div className='w-7 h-7 bg-orange-600 flex flex-col items-center justify-center'>
-                <FaCheck className='text-white' />
-              </div>
-              <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'> Frontend Development</p>
-            </div>
-            <div className='flex items-center space-x-2 mb-6'>
-              <div className='w-7 h-7 bg-green-500 flex flex-col items-center justify-center'>
-                <FaCheck className='text-white' />
-              </div>
-              <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'> FullStack Development</p>
             </div>
           </div>
-        </div>
-        {/* Stats content */}
-        <div data-aos="zoom-in" 
-        data-aos-delay="150"data-aos-anchor-placement="top-center" className='grid grid-cols-2 gap-16 items-center lg:mx-auto'>
-          {/* 1st stat */}
-          <div>
-            <Image
-              src='/images/customer.png'
-              alt='customer'
-              width={80}
-              height={80}
-              className='mx-auto'
-            />
-            <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.client}</p>
-            <p className='text-base sm:text-lg text-gray-400 text-center'>Satisfied Clients</p>
-          </div>
-          {/* 2nd stat */}
-          <div>
-            <Image
-              src='/images/experience.png'
-              alt='customer'
-              width={80}
-              height={80}
-              className='mx-auto'
-            />
-            <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.experience}</p>
-            <p className='text-base sm:text-lg text-gray-400 text-center'>Years experience</p>
-          </div>
-          {/* 3rd stat */}
-          <div>
-            <Image
-              src='/images/completed.png'
-              alt='customer'
-              width={80}
-              height={80}
-              className='mx-auto'
-            />
-            <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.project}</p>
-            <p className='text-base sm:text-lg text-gray-400 text-center'>Completed Project</p>
-          </div>
-          {/* 4th stat */}
-          <div>
-            <Image
-              src='/images/rocket.png'
-              alt='customer'
-              width={80}
-              height={80}
-              className='mx-auto'
-            />
-            <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.website}</p>
-            <p className='text-base sm:text-lg text-gray-400 text-center'>Website Launched</p>
+
+          {/* Right Column - Stats Grid */}
+          <div data-aos="fade-left" className='lg:pl-10'>
+            <div className='grid grid-cols-2 gap-6'>
+              {aboutInfo.stats.map((stat) => (
+                <div 
+                  key={stat.id}
+                  className='group p-6 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300'
+                >
+                  <div className='relative w-16 h-16 mx-auto mb-4 transform group-hover:scale-110 transition-transform duration-300'>
+                    <Image
+                      src={stat.icon}
+                      alt={stat.label}
+                      fill
+                      className='object-contain'
+                    />
+                  </div>
+                  <h3 className='text-3xl font-bold text-white text-center mb-2 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent'>
+                    {stat.value}
+                  </h3>
+                  <p className='text-gray-400 text-center text-sm'>{stat.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

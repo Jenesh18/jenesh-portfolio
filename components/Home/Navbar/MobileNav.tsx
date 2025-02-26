@@ -11,6 +11,18 @@ type Props = {
 
 const MobileNav = ({ showNav, closeNav }: Props) => {
     const navOpen = showNav ? 'translate-x-0' : 'translate-x-[-100%]'
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const targetId = href.replace('#', '');
+        const element = document.getElementById(targetId);
+        element?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+        closeNav(); // Close the mobile nav after clicking
+    };
+
     return (
         <div>
             {/* overlay start */}
@@ -18,7 +30,11 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
                 {/* navlink start */}
                 <div className={`text-white ${navOpen} transform transition-all duration-500 delay-300  fixed justify-center flex flex-col h-full w-[80%] sm:w-[80%] bg-[#0f0715] space-y-6 z-[10000]`}>
                     {navLinks.map((item) => (
-                        <Link key={item.id} href={item.url}>
+                        <Link 
+                            key={item.id} 
+                            href={`#${item.url}`}
+                            onClick={(e) => handleScroll(e, `#${item.url}`)}
+                        >
                             <p className='nav__link text-[20px] ml-12 border-b-[1.5px] pb-2 border-white sm:text-[30px]'>{item.label}</p>
                         </Link>
                     ))}
