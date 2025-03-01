@@ -8,8 +8,10 @@ import { Skills } from './Skills/Skills'
 import Reviews from './Reviews/Reviews'
 import Blogs from './Blogs/Blogs'
 import Contact from './Contact/Contact'
-import AOS from 'aos';
+import AOS from 'aos';  
 import 'aos/dist/aos.css';
+import Experience from './Experience/Experience'
+import Showcase from './Showcase/Showcase'
 
 const Home = () => {
   useEffect(() => {
@@ -28,11 +30,12 @@ const Home = () => {
     <div className='overflow-hidden'>
       <Hero />
       <About />
-      <Services />
+      <Experience />
+      {/* <Services /> */}
       <Projects />
       <Skills />
-      <Reviews />
-      <Blogs />
+      <Showcase />
+      {/* <Reviews /> */}
       <Contact />
     </div>
   )

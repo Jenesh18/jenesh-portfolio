@@ -28,19 +28,19 @@ stats: [
   },
   {
     id: 2,
-    value: "20+",
+    value: "15+",
     label: "Projects Built",
     icon: "/images/completed.png"
   },
   {
     id: 3,
-    value: "15+",
+    value: "10+",
     label: "Technologies",
-    icon: "/images/tech-stack.png"
+    icon: "/images/tech.png"
   },
   {
     id: 4,
-    value: "10+",
+    value: "1+",
     label: "Certifications",
     icon: "/images/certificate.png"  // You'll need a certificate icon
   }
@@ -182,61 +182,51 @@ export const skillsData = [
     id: 1,
     title: "React",
     image: "/images/react.svg",
-    percent: "90%",
   },
   {
     id: 2,
     title: "CSS",
     image: "/images/css.svg",
-    percent: "97%",
   },
   {
     id: 3,
     title: "JavaScript",
     image: "/images/js.svg",
-    percent: "77%",
   },
   {
     id: 4,
     title: "TypeScript",
     image: "/images/ts.svg",
-    percent: "67%",
   },
   {
     id: 5,
     title: "HTML",
     image: "/images/html.svg",
-    percent: "67%",
   },
   {
     id: 6,
-    title: "Node JS",
+    title: "Node.js",
     image: "/images/node.svg",
-    percent: "77%",
   },
   {
     id: 7,
     title: "MongoDB",
     image: "/images/mongo.svg",
-    percent: "65%",
   },
   {
     id: 8,
     title: "Python",
     image: "/images/python.svg",
-    percent: "55%",
   },
   {
     id: 9,
     title: "Firebase",
     image: "/images/firebase.svg",
-    percent: "75%",
   },
   {
     id: 10,
     title: "Vue",
     image: "/images/vue.svg",
-    percent: "35%",
   },
 ];
 
@@ -303,7 +293,107 @@ export const blogs = [
 ];
 
 export const contactData = {
-  phone: "+88(012345 789)",
-  email: "example@gmail.com",
-  address: "Dhaka , Bangladesh",
+  phone: "+91 9054024038",
+  email: "jenesh018@gmail.com",
+  address: "Surat , India",
 };
+
+export const experienceData = [
+  {
+    id: 1,
+    role: "Senior Full Stack Developer",
+    company: "Tech Innovators Ltd",
+    duration: "2023 - Present",
+    location: "San Francisco, CA",
+    description: "Leading development of enterprise-level web applications using Next.js and Node.js",
+    highlights: [
+      "Architected and deployed microservices-based applications",
+      "Reduced application load time by 40% through optimization",
+      "Mentored junior developers and conducted code reviews",
+      "Implemented CI/CD pipelines using GitHub Actions"
+    ],
+    technologies: ["React", "Node.js", "AWS", "MongoDB"],
+    companyLogo: "/images/company1.webp"
+  },
+  {
+    id: 2,
+    role: "Full Stack Developer",
+    company: "Digital Solutions Inc",
+    duration: "2021 - 2023",
+    location: "New York, NY",
+    description: "Developed and maintained multiple client-facing web applications",
+    highlights: [
+      "Built responsive web applications using React and Express",
+      "Integrated third-party APIs and payment gateways",
+      "Improved database query performance by 50%",
+      "Implemented real-time features using Socket.io"
+    ],
+    technologies: ["React", "Express", "PostgreSQL", "Redis"],
+    companyLogo: "/images/company2.png"
+  },
+  {
+    id: 3,
+    role: "Frontend Developer",
+    company: "WebCraft Studios",
+    duration: "2020 - 2021",
+    location: "Remote",
+    description: "Specialized in creating interactive user interfaces for web applications",
+    highlights: [
+      "Developed responsive UI components using React",
+      "Implemented state management using Redux",
+      "Created reusable component libraries",
+      "Optimized application performance"
+    ],
+    technologies: ["React", "Redux", "SASS", "Webpack"],
+    companyLogo: "/images/company3.png"
+  }
+  
+];
+
+export const showcaseItems = [
+  {
+    id: 1,
+    type: 'certificate',
+    title: "AWS Solutions Architect",
+    issuer: "Amazon Web Services",
+    date: "2024",
+    image: "/images/certificates/aws-cert.jpg",
+    description: "Advanced cloud architecture and solutions design certification",
+    link: "https://aws.amazon.com/certification/",
+    badges: ["Cloud", "Architecture"]
+  },
+  {
+    id: 2,
+    type: 'npm',
+    title: "react-smooth-scroll",
+    downloads: "50K+",
+    image: "/images/showcase/npm-package.png",
+    description: "A lightweight smooth scrolling library for React applications",
+    link: "https://www.npmjs.com/package/your-package",
+    badges: ["React", "TypeScript"]
+  },
+  {
+    id: 3,
+    type: 'course',
+    title: "Advanced System Design",
+    platform: "Udemy",
+    rating: 4.8,
+    students: "1000+",
+    image: "/images/courses/system-design.jpg",
+    description: "Comprehensive course on distributed systems design",
+    link: "https://udemy.com/course/...",
+    badges: ["Architecture", "Backend"]
+  },
+  {
+    id: 4,
+    type: 'article',
+    title: "Microservices Best Practices",
+    publisher: "Medium",
+    readTime: "10 min",
+    image: "/images/articles/microservices.jpg",
+    description: "In-depth guide to building scalable microservices",
+    status: "Coming Soon",
+    link: "https://udemy.com/course/...",
+    badges: ["Architecture", "DevOps"]
+  }
+]
