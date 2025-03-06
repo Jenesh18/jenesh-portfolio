@@ -3,7 +3,7 @@ import { aboutInfo } from '@/Data/data'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowRight, FiCode, FiLayout, FiServer, FiUsers } from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 
 const About = () => {
   return (

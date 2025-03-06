@@ -13,10 +13,10 @@ type Props = {
     skill: Skill
 }
 
-const SkillCard = ({ skill }: Props) => {
+const SkillCard: React.FC<Props> = ({ skill }) => {
     const { image,  title } = skill
     return (
-        <div className='p-6 hover:bg-blue-900 duration-300 transition-all cursor-pointer text-center rounded-lg bg-gray-900'>
+        <div className="flex flex-col items-center  hover:bg-blue-900 duration-300 transition-all justify-center bg-gray-800 rounded-lg p-4 h-40">
             <Image
              src={image}
              alt={title}

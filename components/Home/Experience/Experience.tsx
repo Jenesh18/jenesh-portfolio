@@ -59,9 +59,15 @@ const Experience = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
-                        {experience.role}
+                        <a href={experience.website} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          {experience.role}
+                        </a>
                       </h3>
-                      <p className="text-blue-400 font-medium">{experience.company}</p>
+                      <p className="text-blue-400 font-medium">
+                        <a href={experience.website} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          {experience.company}
+                        </a>
+                      </p>
                     </div>
                   </div>
                   

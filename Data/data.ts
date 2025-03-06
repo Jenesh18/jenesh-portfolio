@@ -9,6 +9,8 @@ export const BaseInfo = {
     linkedin: "https://linkedin.com/in/jenesh",
     github: "https://github.com/Jenesh18",
     twitter: "https://x.com/jenesh018",
+    instagram: "https://www.instagram.com/jenesh_18",
+    leetcode:"https://leetcode.com/u/jenesh018/"
   },
 };
 
@@ -34,7 +36,7 @@ stats: [
   },
   {
     id: 3,
-    value: "10+",
+    value: "15+",
     label: "Technologies",
     icon: "/images/tech.png"
   },
@@ -42,7 +44,7 @@ stats: [
     id: 4,
     value: "1+",
     label: "Certifications",
-    icon: "/images/certificate.png"  // You'll need a certificate icon
+    icon: "/images/certificate.png"
   }
 ]
 };
@@ -180,54 +182,100 @@ export const projectData = [
 export const skillsData = [
   {
     id: 1,
-    title: "React",
-    image: "/images/react.svg",
+    title: "JavaScript",
+    image: "/images/javascript.png",
   },
   {
     id: 2,
-    title: "CSS",
-    image: "/images/css.svg",
+    title: "TypeScript",
+    image: "/images/typescript.png",
   },
   {
     id: 3,
-    title: "JavaScript",
-    image: "/images/js.svg",
+    title: "Node.js",
+    image: "/images/nodejs.png",
   },
   {
     id: 4,
-    title: "TypeScript",
-    image: "/images/ts.svg",
+    title: "Express.js",
+    image: "/images/express.png",
   },
   {
     id: 5,
     title: "HTML",
-    image: "/images/html.svg",
+    image: "/images/html.png",
+  },
+  {
+    id: 11,
+    title: "CSS",
+    image: "/images/css.png",
   },
   {
     id: 6,
-    title: "Node.js",
-    image: "/images/node.svg",
+    title: "React",
+    image: "/images/reactjs.png",
+  },
+  {
+    id: 14,
+    title: "Redux",
+    image: "/images/redux.png",
   },
   {
     id: 7,
-    title: "MongoDB",
-    image: "/images/mongo.svg",
+    title: "Next.js",
+    image: "/images/nextjs.png",
   },
   {
     id: 8,
-    title: "Python",
-    image: "/images/python.svg",
+    title: "MongoDB",
+    image: "/images/mongodb.png",
   },
   {
     id: 9,
-    title: "Firebase",
-    image: "/images/firebase.svg",
+    title: "MySQL",
+    image: "/images/mysql.png",
+  },
+  {
+    id: 17,
+    title: "Postgres",
+    image: "/images/postgresql.png",
+  },
+  {
+    id: 18,
+    title: "Supabase",
+    image: "/images/supabase.png",
+  },
+  {
+    id: 19,
+    title: "AWS",
+    image: "/images/aws.png",
   },
   {
     id: 10,
-    title: "Vue",
-    image: "/images/vue.svg",
+    title: "GraphQL",
+    image: "/images/graphql.png",
   },
+  {
+    id: 12,
+    title: "Socket.io",
+    image: "/images/socket-io.png",
+  },
+  {
+    id: 16,
+    title: "Tailwind",
+    image: "/images/tailwind.png",
+  },
+  {
+    id: 13,
+    title: "Git & GitHub",
+    image: "/images/git.png",
+  },
+  {
+    id: 15,
+    title: "Docker",
+    image: "/images/docker.png",
+  },
+
 ];
 
 export const clientReviews = [
@@ -290,6 +338,14 @@ export const blogs = [
     date: "July 25, 2024",
     image: "/images/b3.jpg",
   },
+  {
+    id: 4,
+    title: "The Importance of Website Speed Optimization",
+    summary:
+      "Understand how website speed impacts user experience and learn essential optimization tips.",
+    date: "July 25, 2024",
+    image: "/images/b1.jpg",
+  }
 ];
 
 export const contactData = {
@@ -301,99 +357,38 @@ export const contactData = {
 export const experienceData = [
   {
     id: 1,
-    role: "Senior Full Stack Developer",
-    company: "Tech Innovators Ltd",
-    duration: "2023 - Present",
-    location: "San Francisco, CA",
+    role: "Nodejs Backend devloper",
+    company: "CODEZEE Solutions",
+    website: "https://codezeesolutions.com/",
+    duration: "July 2023 - Present",
+    location: "Surat, India",
     description: "Leading development of enterprise-level web applications using Next.js and Node.js",
     highlights: [
-      "Architected and deployed microservices-based applications",
-      "Reduced application load time by 40% through optimization",
-      "Mentored junior developers and conducted code reviews",
-      "Implemented CI/CD pipelines using GitHub Actions"
+      "Designed and optimized RESTful APIs and microservices.",
+      "Optimized transactions, saving users $1.5 AUD per deposit and $0.5 AUD per withdrawal, improving cost efficiency.",
+      "Collaborated with frontend teams to enhance user experience.",
+      "Built full-stack solutions using EJS for server-side rendering, creating seamless frontend and backend integration."
     ],
-    technologies: ["React", "Node.js", "AWS", "MongoDB"],
-    companyLogo: "/images/company1.webp"
+    technologies: ["Node.js","Express","TypeScript","MongoDB","MySql"],
+    companyLogo: "/images/codezee.png"
   },
   {
     id: 2,
-    role: "Full Stack Developer",
-    company: "Digital Solutions Inc",
-    duration: "2021 - 2023",
-    location: "New York, NY",
-    description: "Developed and maintained multiple client-facing web applications",
+    role: "MERN Stack Intern",
+    company: "CODEZEE Solutions",
+    website: "https://codezeesolutions.com/",
+    duration: "May 2023 - July 2023",
+    location: "Surat, India",
+    description: "Gained hands-on experience in full-stack development and industry best practices.",
     highlights: [
-      "Built responsive web applications using React and Express",
-      "Integrated third-party APIs and payment gateways",
-      "Improved database query performance by 50%",
-      "Implemented real-time features using Socket.io"
+      "Completed internship in 1.5 months due to fast learning.",
+      "Worked on real-world projects using modern web technologies.",
+      "Integrated APIs and optimized database performance.",
+      "Learned scalable development techniques from industry experts."
     ],
-    technologies: ["React", "Express", "PostgreSQL", "Redis"],
-    companyLogo: "/images/company2.png"
-  },
-  {
-    id: 3,
-    role: "Frontend Developer",
-    company: "WebCraft Studios",
-    duration: "2020 - 2021",
-    location: "Remote",
-    description: "Specialized in creating interactive user interfaces for web applications",
-    highlights: [
-      "Developed responsive UI components using React",
-      "Implemented state management using Redux",
-      "Created reusable component libraries",
-      "Optimized application performance"
-    ],
-    technologies: ["React", "Redux", "SASS", "Webpack"],
-    companyLogo: "/images/company3.png"
+    technologies: ["React", "Nodejs", "Express", "Mongodb"],
+    companyLogo: "/images/codezee.png"
   }
-  
 ];
 
-export const showcaseItems = [
-  {
-    id: 1,
-    type: 'certificate',
-    title: "AWS Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    image: "/images/certificates/aws-cert.jpg",
-    description: "Advanced cloud architecture and solutions design certification",
-    link: "https://aws.amazon.com/certification/",
-    badges: ["Cloud", "Architecture"]
-  },
-  {
-    id: 2,
-    type: 'npm',
-    title: "react-smooth-scroll",
-    downloads: "50K+",
-    image: "/images/showcase/npm-package.png",
-    description: "A lightweight smooth scrolling library for React applications",
-    link: "https://www.npmjs.com/package/your-package",
-    badges: ["React", "TypeScript"]
-  },
-  {
-    id: 3,
-    type: 'course',
-    title: "Advanced System Design",
-    platform: "Udemy",
-    rating: 4.8,
-    students: "1000+",
-    image: "/images/courses/system-design.jpg",
-    description: "Comprehensive course on distributed systems design",
-    link: "https://udemy.com/course/...",
-    badges: ["Architecture", "Backend"]
-  },
-  {
-    id: 4,
-    type: 'article',
-    title: "Microservices Best Practices",
-    publisher: "Medium",
-    readTime: "10 min",
-    image: "/images/articles/microservices.jpg",
-    description: "In-depth guide to building scalable microservices",
-    status: "Coming Soon",
-    link: "https://udemy.com/course/...",
-    badges: ["Architecture", "DevOps"]
-  }
-]
+

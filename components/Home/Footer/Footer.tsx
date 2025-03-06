@@ -1,17 +1,36 @@
-import Image from 'next/image'
-import React from 'react'
-
+import React from "react";
+import { FaTwitter, FaInstagram, FaLinkedin, FaCode, FaGithub } from 'react-icons/fa';
+import { BaseInfo } from "@/Data/data";
 const Footer = () => {
-  return (
-    <div className='pt-16 pb-16 bg-[#0f0715]'>
-      <div className='text-center'>
-        <span className='ml-[-1.5rem] sm:ml-0 text-white text-2xl font-bold'>
-          Jenesh
-        </span>
-      </div>
-      <p className='text-white text-opacity-60 mt-6 text-center'>@2025 All Rights Reserved by Jenesh Devganiya</p>
-    </div>
-  )
-}
+  const currentYear = new Date().getFullYear();
 
-export default Footer
+  return (
+    <footer className="bg-[#0f0715] py-10 text-center text-white">
+      <h2 className="text-3xl font-bold mb-2">Jenesh</h2>
+      <div className="mt-4">
+        <div className="flex justify-center space-x-4 mt-2">
+          <a href={BaseInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition duration-300">
+            <FaTwitter size={24} />
+          </a>
+          <a href={BaseInfo.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transition duration-300">
+            <FaInstagram size={24} />
+          </a>
+          <a href={BaseInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition duration-300">
+            <FaLinkedin size={24} />
+          </a>
+          <a href={BaseInfo.socialLinks.leetcode} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
+            <FaCode size={24} />
+          </a>
+          <a href={BaseInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
+            <FaGithub size={24} />
+          </a>
+        </div>
+      </div>
+      <p className="text-sm text-gray-400 mt-2">
+        © {currentYear} All Rights Reserved by Jenesh Devganiya
+      </p>
+    </footer>
+  );
+};
+
+export default Footer;

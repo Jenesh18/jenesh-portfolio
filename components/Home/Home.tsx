@@ -2,16 +2,15 @@
 import React, { useEffect } from 'react'
 import Hero from './Hero/Hero'
 import About from './About/About'
-import Services from './Services/Services'
+// import Services from './Services/Services'
 import Projects from './Projects/Projects'
 import { Skills } from './Skills/Skills'
-import Reviews from './Reviews/Reviews'
+// import Reviews from './Reviews/Reviews'
 import Blogs from './Blogs/Blogs'
 import Contact from './Contact/Contact'
 import AOS from 'aos';  
 import 'aos/dist/aos.css';
 import Experience from './Experience/Experience'
-import Showcase from './Showcase/Showcase'
 
 const Home = () => {
   useEffect(() => {
@@ -34,7 +33,7 @@ const Home = () => {
       {/* <Services /> */}
       <Projects />
       <Skills />
-      <Showcase />
+      <Blogs />
       {/* <Reviews /> */}
       <Contact />
     </div>
