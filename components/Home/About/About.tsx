@@ -70,7 +70,7 @@ const About = () => {
                 >
                   <span className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors duration-300" />
                   <span className="relative text-white font-medium">
-                  Let's work together 
+                  Let&apos;s work together 
                   </span>
                   <FiArrowRight className="relative w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>

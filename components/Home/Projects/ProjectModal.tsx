@@ -3,8 +3,18 @@ import Image from 'next/image';
 import { FiX, FiGithub, FiExternalLink } from 'react-icons/fi';
 import Link from 'next/link';
 
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    techStack: string[];
+    liveUrl: string;
+    githubUrl: string;
+}
+
 interface ProjectModalProps {
-    project: any;
+    project: Project;
     onClose: () => void;
 }
 

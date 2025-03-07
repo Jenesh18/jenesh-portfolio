@@ -7,8 +7,19 @@ import { FiGithub, FiExternalLink, FiArrowRight } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
 import ProjectModal from './ProjectModal'
 
+// Define the Project type as shown above
+// Define the Project type
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    techStack: string[];
+    liveUrl: string;
+    githubUrl: string;
+}
 const Projects = () => {
-    const [selectedProject, setSelectedProject] = useState<any>(null);
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     return (
         <div className='py-20 bg-[#050709]' id='projects'>
