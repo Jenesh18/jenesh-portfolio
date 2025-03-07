@@ -5,6 +5,8 @@ import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
 import AnimatedCursor from "react-animated-cursor"
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const font = Sora({
@@ -31,7 +33,6 @@ export const metadata: Metadata = {
     "Backend Developer"
   ],
   authors: [{ name: "Jenesh Devganiya", url: "https://your-vercel-deployment-link.com" }],
-  viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
 };
 
@@ -63,6 +64,8 @@ export default function RootLayout({
         {children}
         <Footer />
         <ScrollToTop />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
