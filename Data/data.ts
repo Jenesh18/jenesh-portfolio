@@ -362,7 +362,7 @@ export const experienceData = [
     website: "https://codezeesolutions.com/",
     duration: "July 2023 - Present",
     location: "Surat, India",
-    description: "Leading development of enterprise-level web applications using Next.js and Node.js",
+    description: "Leading development of enterprise-level web applications using  Node.js",
     highlights: [
       "Designed and optimized RESTful APIs and microservices.",
       "Optimized transactions, saving users $1.5 AUD per deposit and $0.5 AUD per withdrawal, improving cost efficiency.",

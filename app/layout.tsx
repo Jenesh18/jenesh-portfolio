@@ -32,8 +32,11 @@ export const metadata: Metadata = {
     "Frontend Developer",
     "Backend Developer"
   ],
-  authors: [{ name: "Jenesh Devganiya", url: "https://your-vercel-deployment-link.com" }],
+  authors: [{ name: "Jenesh Devganiya", url: "https://jenesh-portfolio.vercel.app/" }],
   robots: "index, follow",
+  verification: {
+    google: "3hTyUS_BMmPLR6RhkD7b_zQX1Ciu6_j5792k-Zt0uaU",
+  },
 };
 
 
