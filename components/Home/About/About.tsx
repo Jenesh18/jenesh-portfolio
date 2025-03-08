@@ -37,7 +37,7 @@ const About = () => {
                 viewport={{ once: true }}
                   className='text-4xl md:text-5xl lg:text-6xl font-bold py-4'
               >
-                <span className='bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent'>
+                <span className='bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-bg' >
                   {aboutInfo.title}
                 </span>
               </motion.h1>
@@ -121,7 +121,7 @@ const About = () => {
                           className='text-3xl font-bold mb-1'
                         whileHover={{ scale: 1.1 }}
                       >
-                          <span className='bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent'>
+                          <span className='bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-bg'>
                         {stat.value}
                           </span>
                         </motion.div>

@@ -316,37 +316,53 @@ export const clientReviews = [
 export const blogs = [
   {
     id: 1,
-    title: "Top Web Development Trends to Watch in 2024",
-    summary:
-      "Explore the key web development trends for 2024 and their impact on your business.",
-    date: "August 18, 2024",
-    image: "/images/b1.jpg",
+    type: "Course",
+    title: "The Complete Full-Stack Web Development Bootcamp",
+    description:
+      "The only course you need to become a Full-Stack Developer! With 428,296+ ratings and a 4.7 average, this is one of the HIGHEST-RATED courses in Udemy history.",
+    highlights: [
+      "62+ hours of in-depth content",
+      "Covers Frontend & Backend (MERN)",
+      "Beginner to Advanced",
+    ],
+    platform: "Udemy",
+    link: "https://www.udemy.com/share/1013gG/",
+    image: "/images/wc.jpg",
+    badge: "Learning",
   },
   {
     id: 2,
-    title: "Why Your Business Needs a Custom Web Application",
-    summary:
-      "Discover why custom web applications are crucial for driving business growth and efficiency.",
-    date: "August 10, 2024",
-    image: "/images/b2.jpg",
+    type: "Open Source Contribution",
+    title: "JavaScript Interview Questions",
+    description:
+      "Contributed to one of the most popular JavaScript interview repositories with 25.1K+ stars. My PR added a valuable question to help developers prepare for technical interviews.",
+    highlights: [
+      "25.1K+ stars & 7.1K+ forks",
+      "Extensive JavaScript interview prep",
+    ],
+    platform: "GitHub",
+    link: "https://github.com/sudheerj/javascript-interview-questions",
+    image: "/images/jiq.png",
+    badge: "Open Source",
   },
   {
     id: 3,
-    title: "The Importance of Website Speed Optimization",
-    summary:
-      "Understand how website speed impacts user experience and learn essential optimization tips.",
-    date: "July 25, 2024",
-    image: "/images/b3.jpg",
+    type: "NPM Package",
+    title: "MySQL to PostgreSQL Migrator",
+    description:
+      "Developed a Node.js package that simplifies **MySQL to PostgreSQL migration**. It ensures smooth data transfer while preserving schema integrity.",
+    highlights: [
+      "Automatic schema & data type mapping",
+      "Supports primary keys, foreign keys & indexes",
+    ],
+    platform: "NPM",
+    link: "https://www.npmjs.com/package/mysql-to-postgres-migrator",
+    image: "/images/mtpm.png",
+    badge: "Development",
   },
-  {
-    id: 4,
-    title: "The Importance of Website Speed Optimization",
-    summary:
-      "Understand how website speed impacts user experience and learn essential optimization tips.",
-    date: "July 25, 2024",
-    image: "/images/b1.jpg",
-  }
 ];
+
+
 
 export const contactData = {
   phone: "+91 9054024038",

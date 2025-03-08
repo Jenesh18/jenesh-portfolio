@@ -15,7 +15,7 @@ const Blogs = () => {
             data-aos-delay={`${i * 150}`}
             data-aos-anchor-placement="top-center"
             key={blog.id}>
-            <BlogCard blog={blog} />
+            <BlogCard work={blog} />
           </div>
           )
         })}
