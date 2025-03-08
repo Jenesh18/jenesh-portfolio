@@ -14,10 +14,17 @@
   }
 
   .text-bg {
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  .gradient-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
   .custom-scrollbar::-webkit-scrollbar {
     width: 10px;
     height: 10px;
