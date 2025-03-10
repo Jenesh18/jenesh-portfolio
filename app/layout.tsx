@@ -37,7 +37,22 @@ export const metadata: Metadata = {
   verification: {
     google: "3hTyUS_BMmPLR6RhkD7b_zQX1Ciu6_j5792k-Zt0uaU",
   },
+  openGraph: {
+    title: "Jenesh Devganiya | Full-Stack Developer & Node.js Expert",
+    description: "Explore the professional portfolio of Jenesh Devganiya, showcasing projects, skills, and expertise in Full-Stack Development, Node.js, React, and modern web technologies.",
+    url: "https://jenesh-portfolio.vercel.app/",
+    type: "website",
+    images: [
+      {
+        url: "https://jenesh-portfolio.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Jenesh Devganiya - Portfolio",
+      },
+    ],
+  },
 };
+
 
 
 export default function RootLayout({
