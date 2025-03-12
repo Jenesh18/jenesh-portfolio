@@ -37,6 +37,11 @@ export const metadata: Metadata = {
   verification: {
     google: "3hTyUS_BMmPLR6RhkD7b_zQX1Ciu6_j5792k-Zt0uaU",
   },
+  icons: {
+    icon: "/favicon.ico", // Path to your favicon inside the public/ folder
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     title: "Jenesh Devganiya | Full-Stack Developer & Node.js Expert",
     description: "Explore the professional portfolio of Jenesh Devganiya, showcasing projects, skills, and expertise in Full-Stack Development, Node.js, React, and modern web technologies.",
