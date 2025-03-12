@@ -106,77 +106,69 @@ export const servicesData = [
 
 export const projectData = [
   {
-    id: 1,
-    title: "Modern Agency Website",
-    description: "A sophisticated agency website showcasing modern web development practices. Built with Next.js and Tailwind CSS, it features smooth animations, responsive design, and optimized performance. The site includes dynamic content loading, SEO optimization, and interactive elements that enhance user engagement. The dark mode implementation provides better accessibility and user experience.",
-    image: "/images/p1.png",
-    techStack: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://agency-opal-eight.vercel.app/",
-    githubUrl: "https://github.com/yourusername/agency-website",
+    "id": 1,
+    "title": "Smart Meeting Scheduler",
+    "description": "A modern, SEO-friendly meeting scheduler that allows users to share their availability through a personalized meeting page. Clients can request meetings based on available time slots. The platform integrates with Google Calendar and Google Meet for seamless scheduling. Built with Next.js, Prisma (Neon DB - PostgreSQL), and Clerk for authentication, it offers a smooth user experience with a clean UI powered by Tailwind CSS.",
+    "image": "/images/meeting-scheduler.png",
+    "techStack": ["Next.js", "JavaScript", "Prisma", "PostgreSQL (Neon DB)", "Clerk Auth", "Google Calendar API", "Google Meet API", "Tailwind CSS"],
+    "liveUrl": "https://calendly-psi.vercel.app/",
+    "githubUrl": "https://github.com/Jenesh18/calendly"
   },
   {
-    id: 2,
-    title: "Food Delivery Platform",
-    description: "A comprehensive food delivery solution that connects restaurants with customers. The platform features real-time order tracking, secure payment processing, and an intuitive restaurant management system. Built with the MERN stack, it includes features like order history, favorite restaurants, and delivery status updates. The responsive design ensures a seamless experience across all devices.",
-    image: "/images/p2.png",
-    techStack: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
-    liveUrl: "https://burger-pearl.vercel.app/",
-    githubUrl: "https://github.com/yourusername/food-delivery",
+    "id": 2,
+    "title": "YouTube Inspired Streaming App",
+    "description": "A sleek and ad-free YouTube-inspired video streaming app built with React and Material UI. Users can search for videos, explore YouTube stats, view channel details, and watch videos without interruptions. The app fetches real-time data from Rapid API, providing a seamless video-watching experience with a modern UI.",
+    "image": "/images/youtube.png",
+    "techStack": ["React", "Material UI", "Rapid API", "YouTube Data API", "Netlify"],
+    "liveUrl": "https://jeneshtube.netlify.app/",
+    "githubUrl": "https://github.com/Jenesh18/youtube-clone-react"
+  },  
+  {
+    "id": 3,
+    "title": "Personal Developer Portfolio",
+    "description": "A modern and visually appealing portfolio website showcasing my skills, projects, and professional experience. Built with Next.js, Tailwind CSS, and TypeScript, it offers a smooth user experience with fast performance and SEO optimization. The site includes a blog section, interactive UI elements, and a fully responsive design, ensuring accessibility across all devices.",
+    "image": "/images/og-image.png",
+    "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
+    "liveUrl": "https://jenesh-portfolio.vercel.app/",
+    "githubUrl": "https://github.com/Jenesh18/portfolio"
+  },  
+  {
+    "id": 4,
+    "title": "GraphQL Expense Tracker",
+    "description": "A full-stack expense tracker built with the MERN stack, using GraphQL for efficient data fetching. The app allows users to register, log in, and track their expenses with interactive graphs and insights. This project was created to practice GraphQL in both frontend and backend development, ensuring a smooth and scalable API design.",
+    "image": "/images/graphql-expense-tracker.png",
+    "techStack": ["MongoDB", "Express.js", "React", "Node.js", "GraphQL", "Apollo Client", "Chart.js"],
+    "liveUrl": "Your Live URL Here",
+    "githubUrl": "https://github.com/Jenesh18/graphql-expense-tracker"
+  },  
+  {
+    "id": 5,
+    "title": "MERN Stack Chat App",
+    "description": "A real-time chat application built with the MERN stack, featuring user authentication, single and group chats, and advanced group management. Users can create and manage chat groups, add or remove members, edit group profiles, and share images, all stored securely using Cloudinary. The app ensures seamless communication with WebSocket-based real-time messaging.",
+    "image": "/images/chat-app.png",
+    "techStack": ["MongoDB", "Express.js", "React", "Node.js", "Socket.io", "Cloudinary", "JWT Authentication"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/Jenesh18/MERN-stack-chat-app"
+  },  
+  {
+    "id": 6,
+    "title": "React.js Job Portal",
+    "description": "A feature-rich job portal built with React.js, designed for both recruiters and job seekers. The platform includes two separate logins: one for candidates and one for employers. Candidates can upload resumes, browse job listings, and apply for positions, while recruiters can create companies, post job openings, and manage applications. Built with Supabase for the database, Clerk for authentication, and Tailwind CSS for styling, the app ensures a seamless user experience with Zod validation for secure and structured form handling.",
+    "image": "/images/job-portal.png",
+    "techStack": ["React.js", "Supabase", "Clerk", "Tailwind CSS", "Zod Validation"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/Jenesh18/job_portal"
   },
   {
-    id: 3,
-    title: "Game E-commerce Platform",
-    description: "A modern e-commerce platform dedicated to video games and gaming accessories. Features include advanced search filters, user reviews, wishlists, and secure checkout. The platform integrates with multiple payment gateways and provides real-time inventory management. Built with Vue.js for optimal performance and user experience.",
-    image: "/images/p3.png",
-    techStack: ["Vue", "Nuxt.js", "Tailwind CSS", "Stripe", "PostgreSQL"],
-    liveUrl: "https://game-ecommerce-yt.vercel.app/",
-    githubUrl: "https://github.com/yourusername/game-ecommerce",
-  },
-  {
-    id: 4,
-    title: "E-learning Platform",
-    description: "A comprehensive e-learning platform with course management and interactive content.",
-    image: "/images/p4.png",
-    techStack: ["React", "Firebase", "Material UI"],
-    liveUrl: "https://elearning-yt.vercel.app/",
-    githubUrl: "https://github.com/yourusername/elearning-platform",
-  },
-  {
-    id: 5,
-    title: "Investment Platform",
-    description: "A platform for managing investments with real-time data and analytics.",
-    image: "/images/p5.png",
-    techStack: ["Angular", "Node.js", "Express", "MongoDB"],
-    liveUrl: "https://invest-peach.vercel.app/",
-    githubUrl: "https://github.com/yourusername/investment-platform",
-  },
-  {
-    id: 6,
-    title: "Job Portal",
-    description: "A job portal with advanced search and application tracking features.",
-    image: "/images/p6.png",
-    techStack: ["React", "Redux", "Node.js"],
-    liveUrl: "https://job-chi-ruby.vercel.app/",
-    githubUrl: "https://github.com/yourusername/job-portal",
-  },
-  {
-    id: 7,
-    title: "E-commerce Website",
-    description: "A full-featured e-commerce website with product management and payment integration.",
-    image: "/images/p7.png",
-    techStack: ["Shopify", "Liquid", "JavaScript"],
-    liveUrl: "https://wdw-ecom.vercel.app/",
-    githubUrl: "https://github.com/yourusername/ecommerce-website",
-  },
-  {
-    id: 8,
-    title: "Web Hosting Service",
-    description: "A web hosting service platform with user-friendly management tools.",
-    image: "/images/p8.png",
-    techStack: ["PHP", "Laravel", "Bootstrap"],
-    liveUrl: "https://webhost-ten.vercel.app/",
-    githubUrl: "https://github.com/yourusername/web-hosting-service",
-  },
+    "id": 7,
+    "title": "Node.js WhatsApp Bot with Meta API",
+    "description": "An automated WhatsApp bot built using Node.js and the Meta WhatsApp Cloud API, designed to handle auto-replies and streamline communication. This bot enables businesses and individuals to set up automated responses, manage incoming messages, and integrate with external services for a seamless chat experience. It features message handling, dynamic response customization, and webhook integration for real-time updates.",
+    "image": "/images/whatsapp-bot.jpg",
+    "techStack": ["Node.js", "WhatsApp Cloud API", "Express.js", "Webhook"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/Jenesh18/whatsapp-bot-meta-api"
+  }  
+
 ];
 
 export const skillsData = [

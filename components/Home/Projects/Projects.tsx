@@ -86,6 +86,7 @@ const Projects = () => {
                                         <FiArrowRight className='w-4 h-4' />
                                     </button>
                                     <div className='flex items-center gap-4'>
+                                    {project.liveUrl ? (
                                         <Link 
                                             href={project.liveUrl || '#'}
                                             target='_blank'
@@ -93,6 +94,15 @@ const Projects = () => {
                                         >
                                             <FiExternalLink className='w-5 h-5' />
                                         </Link>
+                                    ) : (
+                                        <button
+                                            className="flex items-center gap-2 px-4 py-2 bg-gray-500 text-sm text-white rounded-lg cursor-not-allowed"
+                                            disabled
+                                        >
+                                            <FiExternalLink size={16} />
+                                            View Live
+                                        </button>
+                                    ) }
                                         <Link 
                                             href={project.githubUrl || '#'}
                                             target='_blank'
