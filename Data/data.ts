@@ -138,7 +138,7 @@ export const projectData = [
     "description": "A full-stack expense tracker built with the MERN stack, using GraphQL for efficient data fetching. The app allows users to register, log in, and track their expenses with interactive graphs and insights. This project was created to practice GraphQL in both frontend and backend development, ensuring a smooth and scalable API design.",
     "image": "/images/graphql-expense-tracker.png",
     "techStack": ["MongoDB", "Express.js", "React", "Node.js", "GraphQL", "Apollo Client", "Chart.js"],
-    "liveUrl": "Your Live URL Here",
+    "liveUrl": "",
     "githubUrl": "https://github.com/Jenesh18/graphql-expense-tracker"
   },  
   {
