@@ -4,7 +4,7 @@ export const BaseInfo = {
   description:
     "Passionate Full Stack Developer with expertise in building dynamic, responsive web applications. Skilled in Node.js, React, and modern web technologies to create seamless user experiences.",
   profilePic: "/images/hero1.jpg",
-  resumeURL: "https://docs.google.com/document/d/1Y-Li3KU6WKwSro1LnxqlZyRounG6sUbn-cwqWF_dobk/edit?tab=t.0",
+  resumeURL: "https://docs.google.com/document/d/1W7uVuc4Zi8oLYkT--hEPBzfutdfu3Z6mLb1IbCRWxRg/edit?tab=t.0",
   socialLinks: {
     linkedin: "https://linkedin.com/in/jenesh",
     github: "https://github.com/Jenesh18",
