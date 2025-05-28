@@ -17,8 +17,8 @@ const font = Sora({
 
 
 export const metadata: Metadata = {
-  title: "Jenesh Devganiya | Full-Stack Developer & Node.js Expert",
-  description: "Explore the professional portfolio of Jenesh Devganiya, showcasing projects, skills, and expertise in Full-Stack Development, Node.js, React, and modern web technologies.",
+  title: "Jenes Devganiya | Full-Stack Developer & Node.js Expert",
+  description: "Explore the professional portfolio of Jenes Devganiya, showcasing projects, skills, and expertise in Full-Stack Development, Node.js, React, and modern web technologies.",
   keywords: [
     "Jenesh Devganiya",
     "Full-Stack Developer",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Frontend Developer",
     "Backend Developer"
   ],
-  authors: [{ name: "Jenesh Devganiya", url: "https://jenesh-portfolio.vercel.app/" }],
+  authors: [{ name: "Jenes Devganiya", url: "https://jenesh-portfolio.vercel.app/" }],
   robots: "index, follow",
   verification: {
     google: "3hTyUS_BMmPLR6RhkD7b_zQX1Ciu6_j5792k-Zt0uaU",
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
   openGraph: {
-    title: "Jenesh Devganiya | Full-Stack Developer & Node.js Expert",
-    description: "Explore the professional portfolio of Jenesh Devganiya, showcasing projects, skills, and expertise in Full-Stack Development, Node.js, React, and modern web technologies.",
+    title: "Jenes Devganiya | Full-Stack Developer & Node.js Expert",
+    description: "Explore the professional portfolio of Jenes Devganiya, showcasing projects, skills, and expertise in Full-Stack Development, Node.js, React, and modern web technologies.",
     url: "https://jenesh-portfolio.vercel.app/",
     type: "website",
     images: [
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         url: "https://jenesh-portfolio.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jenesh Devganiya - Portfolio",
+        alt: "Jenes Devganiya - Portfolio",
       },
     ],
   },

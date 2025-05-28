@@ -43,7 +43,7 @@ const Nav = ({ openNav }: Props) => {
             <div className='flex justify-between items-center h-full w-[95%] xl:w-[80%] sm:w-[90%] mx-auto'>
                 {/* Logo start */}
                 <span className=' sm:ml-0 text-white text-2xl font-bold'>
-                    Jenesh
+                    Jenes
                 </span>
                 {/* Logo end */}
                 {/* Nav Items start*/}

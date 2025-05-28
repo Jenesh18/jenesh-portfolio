@@ -1,5 +1,5 @@
 export const BaseInfo = {
-  name: "Jenesh",
+  name: "Jenes",
   position: "Full Stack Web Developer",
   description:
     "Passionate Full Stack Developer with expertise in building dynamic, responsive web applications. Skilled in Node.js, React, and modern web technologies to create seamless user experiences.",

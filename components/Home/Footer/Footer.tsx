@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#0f0715] py-10 text-center text-white">
-      <h2 className="text-3xl font-bold mb-2">Jenesh</h2>
+      <h2 className="text-3xl font-bold mb-2">Jenes</h2>
       <div className="mt-4">
         <div className="flex justify-center space-x-4 mt-2">
           <a href={BaseInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition duration-300">
